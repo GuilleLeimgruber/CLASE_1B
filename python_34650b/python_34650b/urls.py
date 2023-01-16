@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from python_34650b.views import hola_mundo, fecha_hoy, emi_template, index
+from python_34650b.views import hola_mundo, fecha_hoy, emi_template, index, caro_template
 
 
 urlpatterns = [
@@ -25,6 +25,7 @@ urlpatterns = [
     path('Emi/', hola_mundo),
     path('hoy/', fecha_hoy),
     path('Emilia/', emi_template),  
+    path('Carolina/', caro_template),
 
     path('products/', include('products.urls')),
 ]

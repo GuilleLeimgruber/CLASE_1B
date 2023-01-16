@@ -19,4 +19,7 @@ def fecha_hoy(request):
 def emi_template(request):
     return render(request, 'emilia.html', context={})
 
+def caro_template(request):
+    return render(request,'caro.html', context={})
+
   
