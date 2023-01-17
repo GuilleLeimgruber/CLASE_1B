@@ -21,7 +21,7 @@ def list_products(request):
     context = {'products': all_products}
 
 
-    return render(request, 'list_products.html', context = context)
+    return render(request, 'Products/list_products.html', context = context)
 
 
 def saludo(request):
@@ -31,7 +31,7 @@ def list_categories(request):
     all_categories = Category.objects.all
     
     context = {'categories': all_categories}
-    return render(request, 'list_categories.html', context = context)
+    return render(request, 'Categories/list_categories.html', context = context)
 
 
 def create_category(request, name):

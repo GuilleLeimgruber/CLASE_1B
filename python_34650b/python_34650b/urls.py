@@ -28,4 +28,5 @@ urlpatterns = [
     path('Carolina/', caro_template),
 
     path('products/', include('products.urls')),
+    path('orders/', include('orders.urls')),
 ]
